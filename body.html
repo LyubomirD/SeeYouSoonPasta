@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title> 
+See you soon!
+  </title>
+  
+</head>
+<body>
+
+<!-- create a link to my own website ?-->
+
+<div id="Welcome"><h1>
+  Welcome to the [Redacted], we are extremely glad that you are FINALLY HERE!
+</h1></div>
+
+  <div class="eyes">
+    <div class="eye"></div>
+    <div class="eye"></div> 
+  </div>
+
+  <div>
+<!--RULES-->
+<h1 id="rules">
+--RULES TO FOLLOW--</h1> 
+
+<ol class="table">
+  <li>If seen any kind of snail goop/slime, clean immediately.</li>
+  <li>When you see stray animals walking around without its head, close your eyes for one minute no more or less. It should have vanished by then.  </li>
+  <li>Do NOT count on any clocks, digital or mechanical. Time is irrelevant now.</li>
+  <li>If you hear, bone like cracking sounds, seek the nearest shelter and stay quiet. You will know when it is safe! </li>
+  <li>Lock all windows, doors and any potential entry ways. You don't want any unwanted guests, right!</li>
+  <li>Lock rooms that are not in use, as well as, large furniture like closets in the house. He may hide inside them! </li>
+  <li>If you feel that you are being stalked outside, you are! Go home immediately before he takes you by surprise!</li>
+  <li>If you spot white, glowing, spheres around your property he has come for you. You have to beat the clock now or kill yourself! Trust me suicide looks more pleasant than it!  </li>
+  <li>The only time/ clock that you can trust is below. When the countdown starts it has started hunting. Only when is over you are finally safe ... for now!</li>
+</ol>
+
+
+
+  </div>
+
+  <p id="demo" class="countdown-live" style="text-align:center;"></p>
+ <script>
+
+//code for countdown JavaScript 
+
+
+
+
+// Set the date we're counting down to
+var countDownDate = new Date("August 31, 2022, 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + " days, " + hours + " hours, " +
+    minutes + " minutes, " + seconds + " seconds";
+
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "SEE YOU SOON";
+  }
+}, 1000);
+
+
+
+
+ </script>
+
+<style>
+
+
+
+
+body{ 
+  background-color: black;
+  margin: 100px;
+}
+
+#Welcome { 
+  text-align: center;
+  color: whitesmoke;
+  font-style:italic;
+  font-weight:bold;
+}
+
+#rules {
+  text-align: center;
+  color: whitesmoke;
+  font-style:italic;
+  font-weight:bold;
+  font-size: 24px;; 
+}
+
+.table{
+text-align: left;
+color: whitesmoke;
+font-style: italic;
+font-size:20px;
+
+}
+
+.eye
+ {
+  height: 120px;
+  width: 120px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  margin: auto;
+  
+}
+
+.eyes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0 0 0.75rem whitesmoke);
+  margin-bottom: 120px;
+  margin-top:100px;
+  margin-left:130px;
+  margin-right: 130px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+#demo {
+  color:rgba(255, 0, 0, 0.702);
+  font-size: 25px;
+  font-weight:bold;
+  
+}
+</style>
+</body>
+</html>
